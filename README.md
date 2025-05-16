@@ -4,23 +4,6 @@ A full-stack decentralized application (dApp) built using **Solidity**, **Truffl
 
 ---
 
-## 📁 Project Structure
-project-root/
-│
-├── smart-contracts/ # Truffle project folder
-│ ├── contracts/ # Solidity smart contracts
-│ ├── migrations/ # Truffle migration scripts
-│ ├── test/ # Smart contract tests
-│ └── truffle-config.js # Truffle configuration
-│
-├── frontend/ # Frontend application (React/Vite/ReactRouter)
-│ ├── app/
-│ └── ...
-│
-└── README.md
-
----
-
 ## ⚙️ Prerequisites
 
 - [Node.js](https://nodejs.org/) (v16+ recommended)
