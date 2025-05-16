@@ -1,87 +1,49 @@
-# Welcome to React Router!
+# 🔗 Truffle DApp Project
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+A full-stack decentralized application (dApp) built using **Solidity**, **Truffle**, and a modern **frontend** that interacts with Ethereum smart contracts via Web3.js.
 
 ---
 
-Built with ❤️ using React Router.
+## 📁 Project Structure
+project-root/
+│
+├── smart-contracts/ # Truffle project folder
+│ ├── contracts/ # Solidity smart contracts
+│ ├── migrations/ # Truffle migration scripts
+│ ├── test/ # Smart contract tests
+│ └── truffle-config.js # Truffle configuration
+│
+├── frontend/ # Frontend application (React/Vite/ReactRouter)
+│ ├── app/
+│ └── ...
+│
+└── README.md
+
+---
+
+## ⚙️ Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [Truffle](https://trufflesuite.com/) (`npm install -g truffle`)
+- [Ganache](https://trufflesuite.com/ganache/) for local blockchain
+- [MetaMask](https://metamask.io/) browser extension
+
+---
+
+## 🔨 Smart Contracts
+
+### Setup
+
+```bash
+cd smart-contracts
+truffle compile
+
+truffle migrate --network development
+```
+## 🌐 Frontend
+
+### Run Frontend
+```bash
+cd front
+npm run dev
+```
